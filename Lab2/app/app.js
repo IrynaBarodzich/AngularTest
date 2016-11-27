@@ -9,22 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var model_1 = require("./model");
-var MyApp = (function () {
-    function MyApp() {
-        this.model = new model_1.MyModel();
+var AppComponent = (function () {
+    function AppComponent() {
+        this.name = 'Angular';
     }
-    MyApp.prototype.getCompiler = function () {
-        return this.model.compiler;
-    };
-    MyApp = __decorate([
+    AppComponent = __decorate([
         core_1.Component({
-            selector: "my-app",
-            template: "<div>Hello from </div>"
+            selector: 'my-app',
+            template: "<h1>Hello {{name}}</h1>",
         }), 
         __metadata('design:paramtypes', [])
-    ], MyApp);
-    return MyApp;
+    ], AppComponent);
+    return AppComponent;
 }());
-exports.MyApp = MyApp;
+exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.js.map

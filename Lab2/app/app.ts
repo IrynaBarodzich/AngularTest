@@ -1,13 +1,7 @@
 ﻿import { Component } from '@angular/core';
-import { MyModel } from "./model"
 
 @Component({
-    selector: `my-app`,
-    template: `<div>Hello from </div>`
+    selector: 'my-app',
+    template: `<h1>Hello {{name}}</h1>`,
 })
-export class MyApp {
-    model = new MyModel();
-    getCompiler() {
-        return this.model.compiler;
-    }
-}
+export class AppComponent { name = 'Angular'; }
